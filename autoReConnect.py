@@ -14,5 +14,5 @@ ping_line = ping_result.split('\n')
 if len(ping_line[1:-4])>0:
 	print "nothing to do"
 else:
-	run_pst, connect_status = commands.getstatusoutput("bash ~/authReConnect/auth.sh")
+	run_pst, connect_status = commands.getstatusoutput("bash auth.sh")
 	print connect_status
